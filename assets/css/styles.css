@@ -28,12 +28,12 @@ h1, h2 {
 }
 
 .bg-primary {
-  color: #fffffd !important; /* Blanco suave */
+  color: #fffffd !important; /* Blanco suave  NO ES */ 
   background-color: #050f2e !important; /* Azul claro */
 }
 
 .btn-primary {
-  color: #fffffd !important;
+  color: #050f2e !important;
   border-color: #f1162c !important;
   background: #f1162c !important; /* Rojo fuerte */
 }
@@ -72,7 +72,7 @@ header {
 
 .bg-primary ::-moz-selection {
   color: #3098e3;
-  background-color: #fffffd;
+  background-color: #050f2e;
 }
 
 .bg-primary ::selection {
@@ -136,7 +136,7 @@ header {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fffffd;
+  color: #050f2e;
   text-align: left;
   top: 40%;
   max-width: 500px;
@@ -161,7 +161,7 @@ header {
 .carousel-caption p {
   font-size: 22px;
   text-transform: uppercase;
-  color: #fffffd;
+  color: #050f2e;
   letter-spacing: 2px;
 }
 

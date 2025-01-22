@@ -67,7 +67,7 @@ header {
 
 ::selection {
   color: #fffffd;
-  background-color: #3098e3; /* Azul claro */
+  background-color: #050f2e; /* Azul claro */
 }
 
 .bg-primary ::-moz-selection {

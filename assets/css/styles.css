@@ -24,12 +24,12 @@ h1, h2 {
 }
 
 .navbar-dark .navbar-brand span {
-  color: #f1162c !important; /* Nuevo color primario */
+  color: #3098e3!important; /* Nuevo color primario */
 }
 
 .bg-primary {
   color: #fffffd !important; /* Blanco suave */
-  background-color: #3098e3 !important; /* Azul claro */
+  background-color: #050f2e !important; /* Azul claro */
 }
 
 .btn-primary {
@@ -43,7 +43,7 @@ h1, h2 {
 }
 
 .bg-dark {
-  background-color: #0d1232 !important; /* Azul oscuro */
+  background-color: #3098e3 !important; /* Azul oscuro */
 }
 
 header {

@@ -12,7 +12,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   font-weight:600;
 }
-
+.carousel-caption h2, 
+.carousel-caption p {
+    text-shadow: 
+        -2px -2px 0 white,  
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white;
+    color: black; /* Asegura que el texto siga siendo visible */
+    font-weight: bold; /* Opcional, para mejorar la visibilidad */
+}
 h1, h2 {
   font-family: 'Rubik', sans-serif;
   font-family: 'Coda Caption', sans-serif;

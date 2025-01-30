@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
          2px -2px 0 white,
         -2px  2px 0 white,
          2px  2px 0 white;
-    color: black; /* Asegura que el texto siga siendo visible MARCO BLANCO*/
+    color: black; /* Asegura que el texto siga siendo visible MARCO BLANCO */
     font-weight: bold; /* Opcional, para mejorar la visibilidad */
 }
 @media (max-width: 768px) {
@@ -72,7 +72,7 @@ h1, h2 {
 }
 
 .bg-primary {
-  color: #fffffd !important; /* Blanco suave  NO ES */ 
+  color: #fffffd !important; /* Blanco suave */
   background-color: #050f2e !important; /* Azul claro */
 }
 
@@ -124,26 +124,60 @@ header {
   background-color: #fffffd;
 }
 
-.bg-overlay, .hero-img {
+/* Ajustes de la imagen de fondo */
+.hero-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    background-size: contain;
+    height: auto;
+  }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+/* Ajustes responsivos para leyendas del carrusel */
+.carousel-caption {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  bottom: 10%;
+  left: 10%;
+  max-width: 80%;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
 }
 
 .text-primary {
   color: #3098e3 !important; /* Azul claro */
-}
-
-.hero-img {
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-}
-
-.hero-content {
-
 }
 
 .inner-page {
@@ -158,43 +192,12 @@ header {
   font-size: 24px;
 }
 
-.team-dp ul {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.team-dp {
-  text-align: center;
-  display: block;
-}
-
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-caption {
-  position: absolute;
-  left: 10px;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #050f2e;
-  text-align: left;
-  top: 40%;
-  max-width: 500px;
-}
-
 .carousel-indicators li {
   height: 7px;
   border-radius: 0;
   overflow: hidden;
   width: 52px;
   background: #f1162c; /* Rojo fuerte */
-  padding: 0;
-  margin: 0 2px;
-  border: 0 solid #333;
 }
 
 .carousel-caption h2 {
@@ -206,88 +209,24 @@ header {
   font-size: 22px;
   text-transform: uppercase;
   color: #050f2e;
-  letter-spacing: 2px;
-}
-
-.carousel-item .container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 .btn-outline-primary {
-  color: #0d1232; /* Azul oscuro */
-  border-color: #0d1232; /* Azul oscuro */
+  color: #0d1232;
+  border-color: #0d1232;
 }
 
 .btn-outline-primary:hover {
   color: #333;
   background-color: #f1162c; /* Rojo fuerte */
-  border-color: #f1162c; /* Rojo fuerte */
+  border-color: #f1162c;
 }
 
 .card-body {
   background-color: transparent;
 }
 
-.card-body h5 {
-  font-size: 15px;
-  color: #f1162c; /* Rojo fuerte */
-}
-
 .card {
   border: 3px solid rgba(0, 0, 0, 0.6);
   background: transparent;
-}
-
-.card-body p {
-  font-size: 13px;
-}
-
-.price-card {
-  /* color: #fff; */
-}
-
-.bg-dark {
-  background-color: #0d1232 !important; /* Azul oscuro */
-}
-
-.navbar-dark .navbar-toggler {
-  color: #3c3c3c;
-  border-color: #f1ad50;
-}
-
-.wt-blockquote-v2::before {
-  color: #f1162c; /* Rojo fuerte */
-}
-
-.navbar-collapse {
-  padding: 25px 0;
-}
-
-@media only screen and (max-width: 600px) {
-  .carousel-caption h2 {
-    font-size: 19px;
-    color: #f1162c; /* Rojo fuerte */
-  }
-
-  .carousel-caption p {
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
-
-#services h4.h5 {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: bold;
-  color: #f1162c; /* Rojo fuerte */
-}
-
-.portfolio-menu ul li {
-  padding: 5px 25px;
-  border-radius: 16px;
-  font-size: 14px;
 }

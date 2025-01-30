@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   font-weight:600;
 }
+.introduccion {
+  font-size: 18px; /* Tamaño de fuente por defecto */
+}
+
+@media (max-width: 768px) {
+  .introduccion {
+    font-size: 22px; /* Tamaño de fuente para pantallas más pequeñas */
+  }
+}
 
 .carousel-caption h2, 
 .carousel-caption p {

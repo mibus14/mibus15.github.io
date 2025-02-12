@@ -594,53 +594,64 @@
     </section>
    
     
-<section class="wt-section bg-light" id="contact">
-    <div class="container">
-	<div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
-          <div class="col-md-8 text-center w-md-50 mx-auto mb-0 ">
-            <h2 class="mb-md-2">Envianos tu informacion</h2>
-            <p>Describe tu situacion, estas con profesionales.</p>
+    <section class="wt-section bg-light" id="contact">
+      <div class="container">
+          <div class="row justify-content-md-center text-center pb-lg-4 mb-lg-5 mb-4">
+              <div class="col-md-8 text-center w-md-50 mx-auto mb-0">
+                  <h2 class="mb-md-2">Envianos tu informacion</h2>
+                  <p>Describe tu situacion, estas con profesionales.</p>
+              </div>
           </div>
-		</div>
-		
-        <div class="row justify-content-md-center text-center mg-5 pb-5">
-            <div class="col-md-7">
-                     <div class="form"> 
-		  
-		   <!-- Form itself -->
-				  <form name="sentMessage" class="well" id="contactForm"  novalidate data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200"> 
-				 <div class="control-group">
-						   <div class="form-group mb-4">
-					<input type="text" class="form-control form-control-lg" 
-						   placeholder="Nombre completo" id="name" required
-							   data-validation-required-message="Please enter your name" />
-					  <p class="help-block"></p>
-
-				   </div>
-					 </div> 	
-						<div class="form-group mb-4">
-						  <div class="controls">
-					<input type="email" class="form-control form-control-lg" placeholder="Email" 
-									id="email" required
-							   data-validation-required-message="Please enter your email" />
-				</div>
-				</div> 	
-					  
-					   <div class="form-group mb-4">
-						 <div class="controls">
-						 <textarea rows="10" cols="100" class="form-control form-control-lg" 
-							   placeholder="Situacion" id="message" required
-					   data-validation-required-message="Please enter your message" minlength="5" 
-							   data-validation-minlength-message="Min 5 characters" 
-								maxlength="999" style="resize:none"></textarea>
-				</div>
-					   </div> 		 
-				 <div id="success"> </div> <!-- For success/fail messages -->
-			 <div class="text-center">
-              <button class="btn btn-lg btn-primary py-3 mt-3 px-4 btn-pill" type="submit">Envianos tu mensaje</button>
-            </div> 
-				  </form>
-        </div>
+  
+          <div class="row justify-content-md-center text-center mg-5 pb-5">
+              <div class="col-md-7">
+                  <div class="form">
+                      <form name="sentMessage" class="well" id="contactForm" novalidate data-aos="fade-up" data-aos-easing="linear" data-aos-delay="200">
+                          <div class="control-group">
+                              <div class="form-group mb-4">
+                                  <input type="text" class="form-control form-control-lg" placeholder="Nombre completo" id="name" required data-validation-required-message="Please enter your name" />
+                                  <p class="help-block"></p>
+                              </div>
+                          </div> 
+                          <div class="form-group mb-4">
+                              <div class="controls">
+                                  <input type="email" class="form-control form-control-lg" placeholder="Email" id="email" required data-validation-required-message="Please enter your email" />
+                              </div>
+                          </div> 
+                          <div class="form-group mb-4">
+                              <div class="controls">
+                                  <textarea rows="10" cols="100" class="form-control form-control-lg" placeholder="Situacion" id="message" required data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+                              </div>
+                          </div> 
+                          <div id="success"></div> <!-- For success/fail messages -->
+                          <div class="text-center">
+                              <button class="btn btn-lg btn-primary py-3 mt-3 px-4 btn-pill" type="submit" onclick="sendToWhatsApp(event)">Envianos tu mensaje</button>
+                          </div> 
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <script>
+  function sendToWhatsApp(event) {
+      event.preventDefault(); // Prevent the form from submitting
+  
+      // Get the values from the form
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+  
+      // Create the WhatsApp message link
+      var whatsappMessage = `Hola, mi nombre es ${name} y mi correo es ${email}. Mi situación es: ${message}`;
+      var whatsappLink = `https://wa.me/525559049294?text=${encodeURIComponent(whatsappMessage)}`;
+  
+      // Redirect to WhatsApp with the pre-filled message
+      window.open(whatsappLink, '_blank');
+  }
+  </script>
+  
  
             </div>
 			 <div class="col-md-5">

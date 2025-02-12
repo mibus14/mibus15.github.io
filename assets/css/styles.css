@@ -1,4 +1,8 @@
-/* Estilos generales y fuentes */
+/* 
+Author: WebThemez.com
+License: https://webthemez.com/license 
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap'); 
 @import url('https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
@@ -23,6 +27,7 @@ h1, h2 {
   color: #d71c1c !important; /* Rojo intenso */
 }
 
+/* Barra de navegación azul oscuro en todos los dispositivos */
 .bg-primary {
   color: #fff !important;
   background-color: #002b4f !important; /* Azul oscuro */
@@ -52,6 +57,7 @@ header {
   letter-spacing: 1px;
 }
 
+/* Para selección de texto */
 ::-moz-selection {
   color: #fff;
   background-color: #00396b; /* Azul medio */
@@ -222,7 +228,6 @@ header {
     font-size: 19px;
     color: #ffffff; /* Blanco */
   }
-
   body {
     overflow-x: hidden; /* Evita el desplazamiento horizontal */
     margin: 0;
@@ -238,14 +243,29 @@ header {
   .navbar-collapse {
     padding: 15px 0;
   }
-
+  
+  /* Para pantallas más pequeñas */
+  @media only screen and (max-width: 600px) {
+    .navbar-dark .navbar-nav .nav-item .nav-link {
+      color: #ffffff !important; /* Blanco */
+    }
+  
+    /* Reducción de tamaños en móviles */
+    .carousel-caption h2 {
+      font-size: 24px; /* Ajustar para dispositivos pequeños */
+    }
+  
+    .carousel-caption p {
+      font-size: 16px;
+    }
+  }
+  
   .carousel-caption p {
     font-size: 14px;
     font-weight: bold;
   }
 }
-
-/* Asegurando que el contenido ocupe toda la pantalla */
+/* 1. Asegurar que el contenido ocupe toda la pantalla */
 body, html {
   margin: 0;
   padding: 0;
@@ -261,6 +281,7 @@ body, html {
   padding-right: 15px;
 }
 
+/* 2. Asegurar que el contenedor de la navbar se ajuste correctamente */
 .navbar-dark {
   background-color: #002b4f !important; /* Azul oscuro */
   width: 100%;
@@ -270,13 +291,16 @@ body, html {
   color: #ffffff !important; /* Blanco */
 }
 
+/* 3. Asegurar que las imágenes sean responsivas y no se desborden */
 img, .hero-img, .carousel-inner img {
   width: 100%;  /* Las imágenes ocuparán el 100% del ancho */
   height: auto; /* Mantiene la proporción de la imagen */
   object-fit: cover; /* Ajusta la imagen sin distorsionarla */
 }
 
+/* 4. Estilos responsivos */
 @media only screen and (max-width: 600px) {
+  /* Reducción de tamaños de texto y otros elementos para dispositivos móviles */
   .carousel-caption h2 {
     font-size: 24px;
   }

@@ -12,43 +12,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   font-weight: 600;
 }
-/* Asegura que el desplazamiento horizontal no ocurra */
-body {
-  overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
-  overflow-y: scroll; /* Asegura que el desplazamiento vertical esté habilitado */
-  margin: 0;
-  padding: 0;
-}
-
-/* Asegura que todos los elementos no se desborden */
-* {
-  box-sizing: border-box;
-}
-
-/* Evita el desbordamiento de los contenedores */
-html, body {
-  width: 100%;
-  height: 100%;
-}
-
-.container, .navbar, .content, .row {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Asegura que las imágenes, videos e iframes no se desborden */
-img, video, iframe {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal en pantallas pequeñas */
-  }
-}
 
 h1, h2 {
   font-family: 'Rubik', sans-serif;
@@ -83,8 +46,19 @@ header {
   /* Mantén el espacio original */
 }
 
+/* Estilo para el botón de menú en pantallas pequeñas */
+.navbar-dark .navbar-toggler {
+  color: #ffffff;  /* Mantener el color blanco del ícono */
+  border-color: #1a3d63;  /* Ajustar el borde a un color azul oscuro */
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-color: #ffffff;  /* Hacer el icono de menú blanco */
+}
+
+/* Estilo de los enlaces en la navbar */
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #ffffff;
+  color: #ffffff;  /* Texto blanco para los enlaces */
   font-size: 0.937rem;
   font-weight: 600;
   padding: 0.625rem 1.25rem;
@@ -92,6 +66,12 @@ header {
   font-family: 'Rubik', sans-serif;
   letter-spacing: 1px;
 }
+
+/* Cambiar el fondo de la navbar para el contraste */
+.navbar {
+  background-color: #1a3d63;  /* Azul oscuro para el fondo de la navbar */
+}
+
 
 ::-moz-selection {
   color: #fff;

@@ -212,7 +212,18 @@ header {
   padding: 25px 0;
 }
 
+/* Estilos para evitar el desplazamiento horizontal en dispositivos móviles */
+body {
+  overflow-x: hidden;
+}
+
 @media only screen and (max-width: 600px) {
+  /* Para que la barra de navegación tenga el mismo color en móvil */
+  .navbar-dark .navbar-toggler {
+    color: #fff !important;
+    border-color: #00396b;
+  }
+
   .carousel-caption h2 {
     font-size: 19px;
     color: #ffffff; /* Blanco */
@@ -221,6 +232,15 @@ header {
   .carousel-caption p {
     font-size: 14px;
     font-weight: bold;
+  }
+
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    font-size: 16px; /* Ajustar tamaño de fuente para que sea visible */
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-dark .navbar-toggler-icon {
+    background-color: #d71c1c !important; /* Rojo */
   }
 }
 

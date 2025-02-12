@@ -46,19 +46,8 @@ header {
   /* Mantén el espacio original */
 }
 
-/* Estilo para el botón de menú en pantallas pequeñas */
-.navbar-dark .navbar-toggler {
-  color: #ffffff;  /* Mantener el color blanco del ícono */
-  border-color: #1a3d63;  /* Ajustar el borde a un color azul oscuro */
-}
-
-.navbar-dark .navbar-toggler-icon {
-  background-color: #ffffff;  /* Hacer el icono de menú blanco */
-}
-
-/* Estilo de los enlaces en la navbar */
 .navbar .navbar-nav .nav-item .nav-link {
-  color: #ffffff;  /* Texto blanco para los enlaces */
+  color: #ffffff;
   font-size: 0.937rem;
   font-weight: 600;
   padding: 0.625rem 1.25rem;
@@ -66,12 +55,6 @@ header {
   font-family: 'Rubik', sans-serif;
   letter-spacing: 1px;
 }
-
-/* Cambiar el fondo de la navbar para el contraste */
-.navbar {
-  background-color: #1a3d63;  /* Azul oscuro para el fondo de la navbar */
-}
-
 
 ::-moz-selection {
   color: #fff;
@@ -217,7 +200,7 @@ header {
 }
 
 .navbar-dark .navbar-toggler {
-  color: #ffffff;
+  color: #002b4f;
   border-color: #d71c1c;
 }
 
@@ -232,7 +215,7 @@ header {
 @media only screen and (max-width: 600px) {
   .carousel-caption h2 {
     font-size: 19px;
-    color: #00396b; /* Blanco */
+    color: #ffffff; /* Blanco */
   }
 
   .carousel-caption p {

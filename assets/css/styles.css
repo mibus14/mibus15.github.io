@@ -27,6 +27,7 @@ h1, h2 {
   color: #d71c1c !important; /* Rojo intenso */
 }
 
+/* Barra de navegación azul oscuro en todos los dispositivos */
 .bg-primary {
   color: #fff !important;
   background-color: #002b4f !important; /* Azul oscuro */
@@ -56,6 +57,7 @@ header {
   letter-spacing: 1px;
 }
 
+/* Para selección de texto */
 ::-moz-selection {
   color: #fff;
   background-color: #00396b; /* Azul medio */
@@ -212,16 +214,14 @@ header {
   padding: 25px 0;
 }
 
-/* Estilos para evitar el desplazamiento horizontal en dispositivos móviles */
-body {
-  overflow-x: hidden;
-}
-
+/* Estilos de barra de navegación para móviles */
 @media only screen and (max-width: 600px) {
-  /* Para que la barra de navegación tenga el mismo color en móvil */
-  .navbar-dark .navbar-toggler {
-    color: #fff !important;
-    border-color: #00396b;
+  .navbar-dark {
+    background-color: #002b4f !important; /* Azul oscuro */
+  }
+
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #ffffff !important; /* Blanco */
   }
 
   .carousel-caption h2 {
@@ -232,15 +232,6 @@ body {
   .carousel-caption p {
     font-size: 14px;
     font-weight: bold;
-  }
-
-  .navbar-dark .navbar-nav .nav-item .nav-link {
-    font-size: 16px; /* Ajustar tamaño de fuente para que sea visible */
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-dark .navbar-toggler-icon {
-    background-color: #d71c1c !important; /* Rojo */
   }
 }
 
@@ -255,35 +246,4 @@ body {
   padding: 5px 25px;
   border-radius: 16px;
   font-size: 14px;
-}
-@media only screen and (max-width: 600px) {
-  /* Para que la barra de navegación tenga el mismo color en móvil */
-  .navbar-dark .navbar-toggler {
-    color: #fff !important;
-    border-color: #00396b;
-  }
-
-  /* Definir el color de fondo para el navbar en dispositivos móviles */
-  .navbar-dark {
-    background-color: #002b4f !important; /* Azul oscuro */
-  }
-
-  .carousel-caption h2 {
-    font-size: 19px;
-    color: #ffffff; /* Blanco */
-  }
-
-  .carousel-caption p {
-    font-size: 14px;
-    font-weight: bold;
-  }
-
-  .navbar-dark .navbar-nav .nav-item .nav-link {
-    font-size: 16px; /* Ajustar tamaño de fuente para que sea visible */
-    padding: 0.5rem 1rem;
-  }
-
-  .navbar-dark .navbar-toggler-icon {
-    background-color: #d71c1c !important; /* Rojo */
-  }
 }

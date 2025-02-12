@@ -12,7 +12,28 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   font-weight: 600;
 }
+/* Asegúrate de que la barra de navegación tenga el color azul oscuro */
+.navbar-dark {
+  background-color: #002b4f !important; /* Azul oscuro */
+}
 
+/* Asegúrate de que el contenedor de la imagen tenga el tamaño adecuado */
+.intro-image {
+  width: 100%; /* O puedes usar un valor fijo como 1100px */
+  max-width: 1100px; /* Limita el ancho máximo */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Ajustes para la barra de navegación en móviles */
+@media only screen and (max-width: 600px) {
+  .navbar-dark {
+    background-color: #002b4f !important; /* Azul oscuro */
+  }
+
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #ffffff !important; /* Blanco */
+  }
+}
 h1, h2 {
   font-family: 'Rubik', sans-serif;
   font-family: 'Coda Caption', sans-serif;

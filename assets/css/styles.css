@@ -232,7 +232,7 @@ header {
 @media only screen and (max-width: 600px) {
   .carousel-caption h2 {
     font-size: 19px;
-    color: #ffffff; /* Blanco */
+    color: #00396b; /* Blanco */
   }
 
   .carousel-caption p {

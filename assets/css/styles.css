@@ -27,8 +27,23 @@ h1, h2, h3, h4, h5, h6 {
 /* Ajustes para la barra de navegación en móviles */
 @media only screen and (max-width: 600px) {
   .navbar-dark {
-    background-color: #002b4f !important; /* Azul oscuro */
+    background-color: #003366; /* Azul oscuro */
   }
+
+  .navbar-dark .navbar-brand {
+    color: #fff; /* Blanco para el texto de la marca */
+  }
+
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #fff; /* Blanco para los enlaces */
+  }
+
+  .navbar-dark .navbar-toggler {
+    color: #fff; /* Blanco para el icono del menú */
+    border-color: #fff; /* Blanco para el borde del icono */
+  }
+}
+
 
   .navbar-dark .navbar-nav .nav-item .nav-link {
     color: #ffffff !important; /* Blanco */

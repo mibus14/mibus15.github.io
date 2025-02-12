@@ -12,23 +12,42 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   font-weight: 600;
 }
-* {
-  box-sizing: border-box;
-}
-
-html, body {
+/* Asegura que el desplazamiento horizontal no ocurra */
+body {
+  overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
+  overflow-y: scroll; /* Asegura que el desplazamiento vertical esté habilitado */
   margin: 0;
   padding: 0;
 }
 
-.container, .navbar, .content, .row {
+/* Asegura que todos los elementos no se desborden */
+* {
+  box-sizing: border-box;
+}
+
+/* Evita el desbordamiento de los contenedores */
+html, body {
   width: 100%;
+  height: 100%;
+}
+
+.container, .navbar, .content, .row {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
-img {
+/* Asegura que las imágenes, videos e iframes no se desborden */
+img, video, iframe {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Asegura que no haya desbordamiento horizontal en pantallas pequeñas */
+  }
 }
 
 h1, h2 {

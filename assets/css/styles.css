@@ -12,23 +12,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   font-weight: 600;
 }
-@media only screen and (max-width: 600px) {
-  .navbar-dark {
-      background-color: #002b4f !important; /* Azul oscuro */
-  }
 
-  .navbar-dark .navbar-nav .nav-item .nav-link {
-      color: #ffffff !important; /* Color del texto en blanco */
-  }
-
-  .navbar-dark .navbar-toggler {
-      border-color: #d71c1c !important; /* Color del borde del botón del menú */
-  }
-
-  .navbar-dark .navbar-toggler-icon {
-      background-color: #d71c1c !important; /* Color del ícono del menú */
-  }
-}
 h1, h2 {
   font-family: 'Rubik', sans-serif;
   font-family: 'Coda Caption', sans-serif;
@@ -235,6 +219,10 @@ body {
 
 @media only screen and (max-width: 600px) {
   /* Para que la barra de navegación tenga el mismo color en móvil */
+  .navbar-dark {
+    background-color: #002b4f !important; /* Azul oscuro */
+  }
+
   .navbar-dark .navbar-toggler {
     color: #fff !important;
     border-color: #00396b;
@@ -259,7 +247,6 @@ body {
     background-color: #d71c1c !important; /* Rojo */
   }
 }
-
 #services h4.h5 {
   text-transform: uppercase;
   font-size: 16px;

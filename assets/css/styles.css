@@ -24,22 +24,22 @@ h1, h2 {
 }
 
 .navbar-dark .navbar-brand span {
-  color: #d71c1c !important; /* Rojo intenso */
+  color: #00396b !important; /* Azul oscuro */
 }
 
 .bg-primary {
   color: #fff !important;
-  background-color: #002b4f !important; /* Azul oscuro */
+  background-color: #00396b !important; /* Azul oscuro */
 }
 
 .btn-primary {
   color: #fff !important;
-  border-color: #d71c1c !important;
-  background: #d71c1c !important; /* Rojo intenso */
+  border-color: #00396b !important;
+  background: #00396b !important; /* Azul oscuro */
 }
 
 .text-primary {
-  color: #d71c1c !important; /* Rojo intenso */
+  color: #00396b !important; /* Azul oscuro */
 }
 
 header {
@@ -58,7 +58,7 @@ header {
 
 ::-moz-selection {
   color: #fff;
-  background-color: #00396b; /* Azul medio */
+  background-color: #00396b; /* Azul oscuro */
 }
 
 ::selection {
@@ -91,7 +91,7 @@ header {
 }
 
 .inner-page {
-  background: #00396b; /* Azul medio */
+  background: #00396b; /* Azul oscuro */
 }
 
 .price-card .card-body ul li {
@@ -100,7 +100,7 @@ header {
 
 .contact-info i {
   font-size: 24px;
-  color: #d71c1c; /* Rojo */
+  color: #00396b; /* Azul oscuro */
 }
 
 .team-dp ul {
@@ -136,7 +136,7 @@ header {
   border-radius: 0;
   overflow: hidden;
   width: 52px;
-  background: #d71c1c; /* Rojo */
+  background: #00396b; /* Azul oscuro */
   padding: 0;
   margin: 0 2px;
   border: 0 solid #333;
@@ -163,14 +163,14 @@ header {
 }
 
 .btn-outline-primary {
-  color: #00396b; /* Azul medio */
+  color: #00396b; /* Azul oscuro */
   border-color: #00396b;
 }
 
 .btn-outline-primary:hover {
   color: #ffffff;
-  background-color: #d71c1c; /* Rojo */
-  border-color: #d71c1c;
+  background-color: #00396b; /* Azul oscuro */
+  border-color: #00396b;
 }
 
 .card-body {
@@ -179,7 +179,7 @@ header {
 
 .card-body h5 {
   font-size: 15px;
-  color: #d71c1c; /* Rojo */
+  color: #00396b; /* Azul oscuro */
 }
 
 .card {
@@ -196,16 +196,16 @@ header {
 }
 
 .bg-dark {
-  background-color: #002b4f !important; /* Azul oscuro */
+  background-color: #00396b !important; /* Azul oscuro */
 }
 
 .navbar-dark .navbar-toggler {
-  color: #002b4f;
-  border-color: #d71c1c;
+  color: #00396b;
+  border-color: #00396b;
 }
 
 .wt-blockquote-v2::before {
-  color: #d71c1c; /* Rojo */
+  color: #00396b; /* Azul oscuro */
 }
 
 .navbar-collapse {
@@ -220,7 +220,7 @@ body {
 @media only screen and (max-width: 600px) {
   /* Para que la barra de navegación tenga el mismo color en móvil */
   .navbar-dark {
-    background-color: #002b4f !important; /* Azul oscuro */
+    background-color: #00396b !important; /* Azul oscuro */
   }
 
   .navbar-dark .navbar-toggler {
@@ -244,14 +244,15 @@ body {
   }
 
   .navbar-dark .navbar-toggler-icon {
-    background-color: #d71c1c !important; /* Rojo */
+    background-color: #00396b !important; /* Azul oscuro */
   }
 }
+
 #services h4.h5 {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: bold;
-  color: #d71c1c; /* Rojo */
+  color: #00396b; /* Azul oscuro */
 }
 
 .portfolio-menu ul li {

@@ -4,28 +4,33 @@
 }
 
 .navbar a.nav-link {
-  color: #fffffd; /* Blanco suave */
+  color: #ffffff !important; /* Texto blanco */
   padding: 5px 15px !important;
 }
 
 .navbar .nav-link:hover {
-  color: #3098e3; /* Azul claro */
+  color: #ffffff !important; /* Texto blanco al hacer hover */
+  background-color: #f1162c !important; /* Fondo rojo al hacer hover */
 }
 
 .navbar .nav-link.active {
-  color: #f1162c; /* Rojo fuerte */
+  color: #ffffff !important; /* Texto blanco para enlace activo */
+  background-color: #f1162c !important; /* Fondo rojo para enlace activo */
+  border-radius: 50px;
 }
 
 .navbar.navbar-bg-onscroll a.nav-link {
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.7) !important; /* Texto semi-transparente */
 }
 
 .navbar.navbar-bg-onscroll a.nav-link:hover {
-  color: #3098e3; /* Azul claro */
+  color: #ffffff !important; /* Texto blanco al hacer hover */
+  background-color: #f1162c !important; /* Fondo rojo al hacer hover */
 }
 
 .navbar.navbar-bg-onscroll a.nav-link.active {
-  color: #f1162c; /* Rojo fuerte */
+  color: #ffffff !important; /* Texto blanco para enlace activo */
+  background-color: #f1162c !important; /* Fondo rojo para enlace activo */
 }
 
 .navbar-bg-onscroll {
@@ -38,12 +43,12 @@
 }
 
 .navbar-dark .navbar-brand, .navbar-dark .navbar-brand:hover {
-  color: #fffffd; /* Blanco suave */
+  color: #ffffff !important; /* Texto blanco */
   font-weight: bolder;
 }
 
 .navbar-dark .navbar-brand {
-  color: #fffffd !important; /* Blanco suave */
+  color: #ffffff !important; /* Texto blanco */
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -71,12 +76,20 @@
 @media (max-width: 767px) {
   .navbar-expand-sm.fixed-top {
     background-color: #002b4f !important; /* Azul oscuro */
+    padding: 10px 0; /* Espaciado interno */
   }
 
-  .hero-img {
-    background-repeat: no-repeat;
-    background-position: 83% 50%;
-    background-size: cover;
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 1rem; /* Espaciado para móviles */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+  }
+
+  .navbar .navbar-toggler {
+    border-color: #f1162c !important; /* Borde rojo para el botón del menú */
+  }
+
+  .navbar .navbar-toggler-icon {
+    background-color: #f1162c !important; /* Ícono rojo */
   }
 }
 
@@ -91,7 +104,7 @@
   }
 
   .inner-page .onCollapse a {
-    color: #fffffd !important; /* Blanco suave */
+    color: #ffffff !important; /* Texto blanco */
   }
 }
 

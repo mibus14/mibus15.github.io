@@ -1,5 +1,5 @@
 .navbar {
-  background: transparent !important;
+  background: #002b4f !important; /* Azul oscuro */
   padding: 0 0;
 }
 
@@ -70,7 +70,7 @@
 ------------------------------------*/
 @media (max-width: 767px) {
   .navbar-expand-sm.fixed-top {
-    background-color: rgba(27, 30, 36, 0.3);
+    background-color: #002b4f !important; /* Azul oscuro */
   }
 
   .hero-img {
@@ -82,22 +82,22 @@
 
 @media (max-width: 991px) {
   .navbar-expand-md.fixed-top {
-    background-color: rgba(27, 30, 36, 0.3);
+    background-color: #002b4f !important; /* Azul oscuro */
   }
 
   .onCollapse {
-    background: #fffffd;
+    background: #002b4f !important; /* Azul oscuro */
     padding: 0 20px;
   }
 
   .inner-page .onCollapse a {
-    color: #211f1f !important;
+    color: #fffffd !important; /* Blanco suave */
   }
 }
 
 @media (max-width: 1199px) {
   .navbar-expand-lg.fixed-top {
-    background-color: #fffffd !important;
+    background-color: #002b4f !important; /* Azul oscuro */
     padding-left: 15px;
     padding-right: 15px;
   }
